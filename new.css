@@ -1,0 +1,231 @@
+#nevbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(68, 68, 68, 1);
+  transition: .5s;
+  height: 70px;
+  z-index: 999;
+}
+#gotop {
+  display: block;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  z-index: 9999;
+  right: 25px;
+  bottom: 90px;
+  left: initial;
+  cursor: pointer;
+  background: rgba(71, 71, 71, .4);
+  border-radius: 99rem;
+  transition: .3s;
+}
+
+#gotop img {
+  width: 100%;
+  max-width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 110;
+  
+}
+
+#nevbar img {
+  border-style: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  }
+
+  #burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    height: 44px;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    width: 44px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    }
+    #burger .icon-bar:nth-of-type(1) {
+      top: 10px;
+  }
+  .icon-bar {
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    background: #fff;
+    transition: .3s;
+    position: absolute;
+}
+.header_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  }
+
+  ul {
+    display: block;/**/
+    list-style-type: disc;/**/
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.under_line {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  transform: scale(0);
+  background: transparent;
+  transition: transform .3s ease-in-out, background-color .3s ease-in-out, margin-top .3s ease-in;
+  left: 0;
+  bottom: 8px;
+}
+.header_list li {
+  position: relative;
+  display: block;
+  margin-right: 1rem;
+}
+
+.header_list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: .5s;
+  border-bottom: 0;
+  cursor: pointer;
+}
+
+.under_line {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  transform: scale(0);
+  background: transparent;
+  transition: transform .3s ease-in-out, background-color .3s ease-in-out, margin-top .3s ease-in;
+  left: 0;
+  bottom: 8px;
+  }
+
+
+
+/*~~~~~~~~~~~nav~~~~~~~~*/
+nav {
+  position: fixed;
+  top: 70px;
+  height: 50px;
+  width: 100%;
+  background: rgba(116, 116, 116, 0.8);
+  z-index: 100;
+}
+nav {
+  display: block;
+  unicode-bidi: isolate;
+}
+.nav_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  height: 50px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.nav_m_bar {
+  display: none;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#lightbox_member_area, #lightbox_sign_area {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+  background: rgba(255, 255, 255, 1);
+  padding: 30px 40px;
+  max-height: 600px;
+  overflow-y: auto;
+  z-index: 1001;
+  border-radius: 5px;
+}
+
+#lightbox {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+}
+
+
+
+/* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz */
+
+
+/* 
+
+#nevbar .header_wrap{
+  display: flex
+}
+
+#nevbar ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} */

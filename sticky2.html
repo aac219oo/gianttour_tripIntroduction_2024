@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      height: 100px;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .sticky-box {
+      height: 100px;
+      width: 100%;
+      background-color: #666;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      position: sticky;
+      top: 100px;
+
+      z-index: 1000;
+    }
+
+    section {
+      height: 100vh;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">Navbar 1</div>
+
+  <section>
+    <h1>第一章節</h1>
+  </section>
+
+  <!-- <div class="navbar">Navbar 2</div> -->
+  <div class="sticky-box">Sticky Box</div>
+
+  <section>
+    <h1>第二章節</h1>
+  </section>
+</body>
+
+</html>
